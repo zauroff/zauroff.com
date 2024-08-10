@@ -31,3 +31,32 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  p {
+    font-family: "bely", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+/* Bely Display Regular
+font-family: "bely-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+Bely Regular
+font-family: "bely", serif;
+font-weight: 400;
+font-style: normal;
+Bely Italic
+font-family: "bely", serif;
+font-weight: 400;
+font-style: italic;
+Bely Bold
+font-family: "bely", serif;
+font-weight: 700;
+font-style: normal;
+Bely Bold Italic
+font-family: "bely", serif;
+font-weight: 700;
+font-style: italic; */
