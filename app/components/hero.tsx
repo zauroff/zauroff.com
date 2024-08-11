@@ -1,18 +1,22 @@
+"use client"
+
 
 
 export default function Hero(){
   return (
     <>
       <div className="flex flex-col items-center h-[120vh] w-full bg-green-500 z-0 pt-0 relative">
+        
+        
         <div className="fixed inset-0 flex justify-center items-center">
-          <div className="relative h-[75vh] w-[95vw] md:h-[90vh] md:w-[90vw]">
+          <div className="relative h-[75vh] w-[95vw] md:h-[90vh] md:w-[90vw] rounded-[30px] shadow-neutral-800 shadow">
             <video 
               src="front_video.mp4"
               autoPlay
               muted
               playsInline
               loop
-              className="rounded-[30px] border-2 border-black h-full w-full object-cover shadow-black shadow-md"
+              className="rounded-[30px] border-1 border-black h-full w-full object-cover"
             ></video>
 
             {/* Image positioned inside the video */}

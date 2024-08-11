@@ -10,12 +10,13 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import Loading from "./loading";
+
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-0 relative">
       <Hero></Hero>
-      
       <div className="bg-black h-[100vh] relative w-full flex justify-center text-white">
         <h1 className="text-5xl pt-12">Under Construction.</h1>
         {/* Content for the black div */}
