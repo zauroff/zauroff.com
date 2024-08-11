@@ -3,7 +3,7 @@
 export default function Hero(){
   return (
     <>
-      <div className="flex flex-col items-center h-[100vh] w-full bg-green-500 z-0 pt-0 relative">
+      <div className="flex flex-col items-center h-[120vh] w-full bg-green-500 z-0 pt-0 relative">
         <div className="fixed inset-0 flex justify-center items-center">
           <div className="relative h-[75vh] w-[95vw] md:h-[90vh] md:w-[90vw]">
             <video 
