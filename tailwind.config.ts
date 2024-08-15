@@ -19,7 +19,9 @@ const config = {
     },
     extend: {
       colors: {
-        special_green : "#39b54a",
+        forest_hills:"#0e5546",
+        noir:"",
+        peach:"",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
