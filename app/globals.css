@@ -34,15 +34,30 @@ body {
 
 @layer base {
   p {
-    font-family: "bely", sans-serif;
+    font-family: "owners", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
   h1 {
-    font-family: "bely", sans-serif;
-    font-weight: 400;
+    font-family: "owners", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    @apply md:text-8xl text-5xl
+  }
+
+  h2 {
+    font-family: "owners", sans-serif;
+    font-weight: 600;
     font-style: normal;
+    @apply md:text-4xl text-3xl;
+  }
+
+  * {
+    @apply text-eggshell;
+  }
+  html {
+    @apply scroll-smooth;
   }
 }
 
@@ -97,5 +112,118 @@ font-weight: 700;
 font-style: normal;
 Bely Bold Italic
 font-family: "bely", serif;
+font-weight: 700;
+font-style: italic; */
+
+/* Owners Regular
+font-family: "owners", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners Italic
+font-family: "owners", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners Bold
+font-family: "owners", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners Bold Italic
+font-family: "owners", sans-serif;
+font-weight: 700;
+font-style: italic;
+Owners Narrow Regular
+font-family: "owners-narrow", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners Narrow Italic
+font-family: "owners-narrow", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners Narrow Bold
+font-family: "owners-narrow", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners Narrow Bold Italic
+font-family: "owners-narrow", sans-serif;
+font-weight: 700;
+font-style: italic;
+Owners Wide Regular
+font-family: "owners-wide", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners Wide Italic
+font-family: "owners-wide", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners Wide Bold
+font-family: "owners-wide", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners Wide Bold Italic
+font-family: "owners-wide", sans-serif;
+font-weight: 700;
+font-style: italic;
+Owners XNarrow Regular
+font-family: "owners-xnarrow", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners XNarrow Italic
+font-family: "owners-xnarrow", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners XNarrow Bold
+font-family: "owners-xnarrow", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners XNarrow Bold Italic
+font-family: "owners-xnarrow", sans-serif;
+font-weight: 700;
+font-style: italic;
+Owners XWide Regular
+font-family: "owners-xwide", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners XWide Italic
+font-family: "owners-xwide", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners XWide Bold
+font-family: "owners-xwide", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners XWide Bold Italic
+font-family: "owners-xwide", sans-serif;
+font-weight: 700;
+font-style: italic;
+Owners XXNarrow Regular
+font-family: "owners-xxnarrow", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners XXNarrow Italic
+font-family: "owners-xxnarrow", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners XXNarrow Bold
+font-family: "owners-xxnarrow", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners XXNarrow Bold Italic
+font-family: "owners-xxnarrow", sans-serif;
+font-weight: 700;
+font-style: italic;
+Owners XXWide Regular
+font-family: "owners-xxwide", sans-serif;
+font-weight: 400;
+font-style: normal;
+Owners XXWide Italic
+font-family: "owners-xxwide", sans-serif;
+font-weight: 400;
+font-style: italic;
+Owners XXWide Bold
+font-family: "owners-xxwide", sans-serif;
+font-weight: 700;
+font-style: normal;
+Owners XXWide Bold Italic
+font-family: "owners-xxwide", sans-serif;
 font-weight: 700;
 font-style: italic; */

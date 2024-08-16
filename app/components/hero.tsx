@@ -1,54 +1,32 @@
 "use client"
+import { useState, useEffect } from "react";
 
 
 
 export default function Hero(){
+  
+  
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 200); // Delay to ensure the effect is visible
+  }, []);
+
+
   return (
     <>
-      <div className="flex flex-col items-center h-[120vh] w-full bg-green-500 z-0 pt-0 relative">
-        
-        
-        <div className="fixed inset-0 flex justify-center items-center">
-          <div className="relative h-[75vh] w-[95vw] md:h-[90vh] md:w-[90vw] rounded-[30px] shadow-neutral-800 shadow">
-            <video 
-              src="front_video.mp4"
-              autoPlay
-              muted
-              playsInline
-              loop
-              className="rounded-[30px] border-1 border-black h-full w-full object-cover"
-            ></video>
-
-            {/* Image positioned inside the video */}
-            <img
-              src="logo.svg"
-              alt="zauroff"
-              className="absolute md:-left-4 left-6 bottom-6 opacity-95 h-[80px] w-[300px] md:h-[100px] md:w-[600px] max-h-[100vh]"
-            />
-          </div>
+      <div className="fixed bg-blueberry h-[100vh] w-full flex text-5xl font-bold justify-center items-center md:justify-start overflow-x-hidden max-w-full -z-10">
+        <div className={` px-4 md:px-16 flex flex-col text-center md:text-left 
+          transform transition-transform duration-1000 ease-in-out ${isLoaded ? 'translate-x-0 ' : '-translate-x-[200vw]'}`}>
+          <h1>Howdy, I'm Dan</h1>
+          <h1 className="text-2xl md:text-4xl font-bold">developer & designer</h1>
         </div>
+
       </div>
     </>
   );
 };
 
 
-
-// export default function Hero(){
-//   return (
-//     <>
-//       <div className="flex flex-col items-center h-[100vh] w-full bg-green-500 z-0 pt-0">
-//         <div className="fixed inset-0 flex justify-center items-center">
-//           <video 
-//             src="zauroff front page video.mp4"
-//             autoPlay
-//             muted
-//             playsInline
-//             loop
-//             className="rounded-[30px] border-2 border-black h-[100vh] object-cover md:w-[100vw] md:h-auto"
-//           />
-//         </div>
-//       </div>
-//     </>
-//   );
-// };

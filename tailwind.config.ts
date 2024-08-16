@@ -20,8 +20,10 @@ const config = {
     extend: {
       colors: {
         forest_hills:"#0e5546",
-        noir:"",
-        peach:"",
+        noir:"#1f1f1f",
+        peach:"#faeddf",
+        blueberry:"#1b38e2",
+        eggshell:"#f2f2f2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -54,6 +56,9 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        transitionDuration: {
+          '2000': '2000ms',
         },
       },
       borderRadius: {

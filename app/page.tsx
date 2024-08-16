@@ -1,39 +1,31 @@
+
+"use client"
 import Image from "next/image";
 import Hero from "./components/hero";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
 import Loading from "./loading";
+import Navbar from "./components/navbar";
+import { useState, useEffect, Suspense } from "react";
+
 
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-0 relative">
-      <Hero></Hero>
-      <div className="bg-black h-[100vh] relative w-full flex justify-center text-white">
-        <h1 className="text-5xl pt-12">Under Construction.</h1>
-        {/* Content for the black div */}
-        {/* <NavigationMenu >
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className=""></NavigationMenuTrigger>
-              <NavigationMenuContent className="flex flex-col px-20">
-                <NavigationMenuLink>One</NavigationMenuLink>
-                <NavigationMenuLink>Two</NavigationMenuLink>
-                <NavigationMenuLink>Three</NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu> */}
 
-      </div>
+
+
+
+  return (
+      <main className="flex flex-col items-center justify-start p-0 relative">
+        <Navbar />
+        <Hero />
+
+        <div className="bg-noir w-full h-[150vh] mt-[100vh]">
+          <div className="mx-16 mt-32">
+            <h2 className="">Hi</h2>
+          </div>
+        </div>
     </main>
+  
   );
 }
+
+
