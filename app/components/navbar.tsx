@@ -1,22 +1,16 @@
 import Link from "next/link"
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Menu from "./menu";
-
+import { motion } from "framer-motion";
 
 export default function Navbar() {
-    const [isLoaded, setIsLoaded] = useState(false);
 
-    useEffect(() => {
-        setTimeout(() => {
-        setIsLoaded(true);
-        }, 100); // Delay to ensure the effect is visible
-    }, []);
-    
     return (
-        <nav
-      className={`flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20
-        transform transition-opacity duration-1000 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+        <motion.nav
+        className='flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20'
+        initial={{opacity:0 }}
+        animate={{opacity:1}}
+        transition={{duration:1}}
         >
         <Link href="/">
             <Image
@@ -29,6 +23,6 @@ export default function Navbar() {
             />
         </Link>
         <Menu />
-        </nav>
+        </motion.nav>
     );
 };

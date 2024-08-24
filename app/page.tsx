@@ -18,9 +18,9 @@ export default function Home() {
         <Navbar />
         <Hero />
 
-        <div className="bg-noir w-full h-[150vh] mt-[100vh]">
+        <div className="bg-noir w-full h-[150vh] mt-[100vh] rounded-t-[90px]">
           <div className="mx-16 mt-32">
-            <h2 className="">Hi</h2>
+            <h2 className="">Under Construction.</h2>
           </div>
         </div>
     </main>

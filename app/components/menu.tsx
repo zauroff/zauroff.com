@@ -35,9 +35,9 @@ export default function Menu() {
       {/* Sliding Menu */}
       <div className={`fixed inset-0 h-[100vh] w-screen bg-noir transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0 ' : 'translate-x-[100vw]'} z-30 overflow-hidden`}>
         <div className="flex flex-col h-screen justify-center items-center px-8">
-            <h1>Work</h1>
-            <h1>Design</h1>
-            <h1>Contact</h1>
+            <h2>Work</h2>
+            <h2>Design</h2>
+            <h2>Contact</h2>
 
         </div>
       </div>
