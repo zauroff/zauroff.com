@@ -45,8 +45,8 @@ export default function Stars(props: GroupProps) {
             ref.current.rotation.y -= randomMovement.current.x * delta * 5;
 
             // Map the mouse position to the rotation with user control
-            ref.current.rotation.x += (mouse.current.y * Math.PI * 0.15) * delta;
-            ref.current.rotation.y += (mouse.current.x * Math.PI * 0.15) * delta;
+            ref.current.rotation.x += (mouse.current.y * Math.PI * 0.08) * delta;
+            ref.current.rotation.y += (mouse.current.x * Math.PI * 0.08) * delta;
         }
     });
 
