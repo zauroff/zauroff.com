@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Canvas } from "@react-three/fiber";
 import Stars from "./3d/stars";
 import StarsMobile from "./3d/starsMobile";
+import ClockComponent from "./clock";
 
 export default function Hero(){
   
@@ -16,14 +17,9 @@ export default function Hero(){
         transition={{ duration: .5, ease: "easeOut" }}
       >
 
-        {/* Desktop: Visible on screens md and up */}
-        <Canvas className="fixed top-0 left-0 w-full h-full -z-30 md:block hidden">
-          <Stars />
-        </Canvas>
 
-        {/* Mobile: Visible on screens below md */}
-        <Canvas className="fixed top-0 left-0 w-full h-full -z-30 md:hidden">
-          <StarsMobile />
+        <Canvas className="fixed top-0 left-0 w-full h-full -z-30">
+          <Stars />
         </Canvas>
 
         
@@ -37,7 +33,21 @@ export default function Hero(){
           <h1 className="text-2xl md:text-4xl font-bold">developer & designer</h1>
         </motion.div>
 
+
+
+
       </motion.div>
+      
+      
+      <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="fixed bottom-5"
+        >
+            <ClockComponent/>
+        </motion.div>
+
     </>
   );
 };
