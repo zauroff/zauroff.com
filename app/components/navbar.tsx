@@ -7,7 +7,7 @@ export default function Navbar() {
 
     return (
         <motion.nav
-        className='flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20'
+        className='flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-16 z-20'
         initial={{opacity:0 }}
         animate={{opacity:1}}
         transition={{duration:1}}
