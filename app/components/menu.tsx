@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { HiMenuAlt4 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
+import {motion} from 'framer-motion'
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,13 +35,51 @@ export default function Menu() {
 
       {/* Sliding Menu */}
       <div className={`fixed inset-0 h-[100vh] w-screen bg-noir transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0 ' : 'translate-x-[100vw]'} z-30 overflow-hidden`}>
-        <div className="flex flex-col h-screen justify-center items-center px-8">
-            <h2>Work</h2>
-            <h2>Design</h2>
-            <h2>Contact</h2>
+        <section className="grid h-screen place-content-center gap-2">
+            <FlipLink href="/about">About</FlipLink>
+            <FlipLink href="/work">Work</FlipLink>
+            <FlipLink href="/contact">Contact</FlipLink>
 
-        </div>
+
+        </section>
       </div>
     </>
   );
+}
+
+
+function FlipLink({children, href} : {children:string, href:string}) {
+  return (
+    <motion.a 
+      initial="initial"
+      whileHover="hovered"
+      whileTap="tapped"
+      href = {href}
+      className="relative block overflow-hidden whitespace-nowrap md:text-7xl text-6xl font-black uppercase"
+    >
+      <motion.div
+        variants={{
+          initial: {y: 0},
+          hovered: {y: "-100%"},
+          tapped: {y: "-100%"}
+        }}
+      >
+        {children}
+      </motion.div>
+
+      {/* secondary motion div to get the animation working, this will be hidden initially */}
+      <motion.div
+        className="absolute inset-0"
+        variants={{
+          initial: {y: "100%"},
+          hovered: {y: 0},
+          tapped: {y: 0}
+        }}
+      >
+        {children}
+      </motion.div>
+    </motion.a>
+
+  );
+
 }

@@ -33,6 +33,13 @@ body {
 }
 
 @layer base {
+
+  a {
+    font-family: "owners", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   p {
     font-family: "owners", sans-serif;
     font-weight: 400;
@@ -51,6 +58,13 @@ body {
     font-weight: 600;
     font-style: normal;
     @apply md:text-4xl text-2xl;
+  }
+
+  h3 {
+    font-family: "owners", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    @apply md:text-2xl text-xl;
   }
 
   * {
@@ -94,6 +108,41 @@ body {
 @keyframes rotate {
   100% { transform: rotate(360deg) }
 }
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  @apply text-6xl
+}
+
+.track-left {
+
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-left 32s linear infinite;
+
+
+}
+
+.track-right {
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-right 32s linear infinite;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+
 /* Bely Display Regular
 font-family: "bely-display", sans-serif;
 font-weight: 400;

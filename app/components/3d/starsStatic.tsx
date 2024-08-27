@@ -10,7 +10,7 @@ import * as random from 'maath/random/dist/maath-random.esm';
 import { GroupProps } from '@react-three/fiber'
 import * as THREE from 'three';
 
-export default function StarsMobile(props: GroupProps) { 
+export default function StarsStatic(props: GroupProps) { 
     const ref = useRef<THREE.Points>(null) 
     const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 10 }))
     useFrame((state, delta) => {
