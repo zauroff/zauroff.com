@@ -1,9 +1,9 @@
 "use client"
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion"
+import { easeOut, motion } from "framer-motion"
 import { Canvas } from "@react-three/fiber";
 import Stars from "./3d/stars";
-import StarsMobile from "./3d/starsMobile";
+import StarsMobile from "./3d/starsStatic";
 import ClockComponent from "./clock";
 
 export default function Hero(){
@@ -13,8 +13,8 @@ export default function Hero(){
       <motion.div 
         className="fixed bg-gradient-to-tl from-blueberry to-black h-[100vh] w-full flex text-5xl font-bold justify-center items-center md:justify-start overflow-x-hidden max-w-full -z-10"
         initial={{borderRadius:'50%', opacity:0}}
-        animate={{ borderRadius:'0px', opacity:1 }}
-        transition={{ duration: .5, ease: "easeOut" }}
+        animate={{ borderRadius:'0', opacity:1}}
+        transition={{ duration: 1, ease:easeOut }}
       >
 
 
@@ -43,7 +43,7 @@ export default function Hero(){
       <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 2 }}
           className="fixed bottom-5"
         >
             <ClockComponent/>
