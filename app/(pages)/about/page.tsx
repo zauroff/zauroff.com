@@ -26,8 +26,8 @@ export default function About(){
       </motion.div>
 
         <div className="relative bg-noir w-full h-screen mt-[100vh]">
-          <div className="mx-32 pt-32">
-            <h2>Hi</h2>
+          <div className="mx-32 pt-32 justify-center items-center place-content-center">
+            <img src="construction.png" width={500}></img>
           </div>
         </div>
       

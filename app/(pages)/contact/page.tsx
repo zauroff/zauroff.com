@@ -1,3 +1,3 @@
 export default function Work() {
-    return <h3>hi!</h3>
+    return <img src="construction.png" width={500}></img>
 }
