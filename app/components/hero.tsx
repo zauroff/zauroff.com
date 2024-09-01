@@ -29,8 +29,8 @@ export default function Hero(){
           transition={{ duration: 2 }}
           className="fixed px-4 md:px-16 flex flex-col text-center md:text-left "
         >
-          <h1>Howdy, I&apos;m Dan</h1>
-          <h1 className="text-2xl md:text-4xl font-bold">developer & designer</h1>
+          <h1>howdy, i&apos;m dan</h1>
+          <h1 className="text-xl md:text-4xl font-bold">developer & designer</h1>
         </motion.div>
 
 
