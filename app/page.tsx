@@ -12,6 +12,13 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    // Prevent touchmove to disable scrolling on iOS
+    const preventScroll = (e : TouchEvent) => e.preventDefault();
+    document.addEventListener('touchmove', preventScroll, { passive: false });
+
+
     const timer = setTimeout(() => {~
       setIsLoading(false);
     }, 1000); 

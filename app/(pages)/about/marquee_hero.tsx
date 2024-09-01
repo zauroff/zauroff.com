@@ -8,7 +8,7 @@ function MarqueeLeft() {
     return (
         <div className="space-y-10 overflow-hidden">
             <div className="relative overflow-hidden">
-                <motion.h1 className="whitespace-nowrap text-3xl" style={{ x }}>
+                <motion.h1 className="whitespace-nowrap text-3xl" style={{ x, willChange: 'transform' }}>
                     About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. About Me. 
                 </motion.h1>
             </div>
