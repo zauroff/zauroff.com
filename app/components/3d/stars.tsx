@@ -45,16 +45,16 @@ export default function Stars(props: GroupProps) {
         if (ref.current) {
             // Apply user interaction rotation with higher priority
             if (isUserInteracting.current) {
-                ref.current.rotation.x = THREE.MathUtils.lerp(ref.current.rotation.x, mouse.current.y * Math.PI * 0.2, delta * 2);
-                ref.current.rotation.y = THREE.MathUtils.lerp(ref.current.rotation.y, mouse.current.x * Math.PI * 0.2, delta * 2);
+                ref.current.rotation.x = THREE.MathUtils.lerp(ref.current.rotation.x, mouse.current.y * Math.PI * 0.1, delta * 2);
+                ref.current.rotation.y = THREE.MathUtils.lerp(ref.current.rotation.y, mouse.current.x * Math.PI * 0.1, delta * 2);
                 // Gradually reset isUserInteracting to false if no input
                 if (Math.abs(mouse.current.x) < 0.01 && Math.abs(mouse.current.y) < 0.01) {
                     isUserInteracting.current = false;
                 }
             } else {
                 // Apply random movement when no user interaction
-                ref.current.rotation.x += randomMovement.current.y * delta * 15;
-                ref.current.rotation.y -= randomMovement.current.x * delta * 15;
+                ref.current.rotation.x += randomMovement.current.y * delta * 10;
+                ref.current.rotation.y -= randomMovement.current.x * delta * 10;
             }
         }
     });
