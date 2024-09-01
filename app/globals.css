@@ -44,6 +44,7 @@ body {
     font-family: "owners", sans-serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 0.03em;
   }
 
   h1 {
@@ -66,6 +67,15 @@ body {
     font-style: normal;
     @apply md:text-2xl text-xl;
   }
+
+  h4 {
+    font-family: "owners", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    @apply md:text-2xl text-xl;
+  }
+
+
 
   * {
     @apply text-eggshell;

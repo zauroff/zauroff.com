@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 
+
 function MarqueeLeft() {
     const { scrollY } = useScroll();
     const x = useTransform(scrollY, [0, 1000], ['-75vw', '0vw']); // Moves left to right
@@ -32,7 +33,7 @@ function MarqueeRight() {
 
 export default function MarqueeHero() {
     return (
-        <div>
+        <div className=''>
             <MarqueeLeft />
             <MarqueeRight />
             <MarqueeLeft />
