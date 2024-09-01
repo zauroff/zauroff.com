@@ -47,7 +47,7 @@ export default function About() {
       
         {/* main info section */}
         <motion.div
-          className="relative w-full mt-32"
+          className="relative w-full mt-32 min-h-[100vh]"
           style={{ backgroundColor }}>
           <div className="md:mx-16 mx-6 pt-36 justify-center items-center place-content-center">
             <div className="mb-16">
