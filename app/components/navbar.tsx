@@ -9,14 +9,24 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        // If scrolling down, hide navbar (set opacity to 0)
+      const scrollY = window.scrollY;
+      const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      if (scrollY === 0) {
+        // If the user is at the top of the page, always show the navbar
+        setShowNavbar(true);
+      } else if (scrollY < pageHeight * 0.1) {
+        // If the user is within the top 10% of the page, show the navbar
+        setShowNavbar(true);
+      } else if (scrollY > lastScrollY) {
+        // If scrolling down, hide the navbar
         setShowNavbar(false);
       } else {
-        // If scrolling up, show navbar (set opacity to 100)
+        // If scrolling up, show the navbar
         setShowNavbar(true);
       }
-      setLastScrollY(window.scrollY);
+
+      setLastScrollY(scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
