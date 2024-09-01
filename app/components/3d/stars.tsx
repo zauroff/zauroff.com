@@ -14,11 +14,13 @@ export default function Stars(props: GroupProps) {
     const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 10 }));
     const mouse = useRef({ x: 0, y: 0 });
     const randomMovement = useRef({ x: Math.random() * 0.005, y: Math.random() * 0.005 });
+    const isUserInteracting = useRef(false);
 
     useEffect(() => {
         const handleMouseMove = (event: MouseEvent) => {
             mouse.current.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouse.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            isUserInteracting.current = true; // Mark as user interacting
         };
 
         const handleTouchMove = (event: TouchEvent) => {
@@ -26,6 +28,7 @@ export default function Stars(props: GroupProps) {
                 const touch = event.touches[0];
                 mouse.current.x = (touch.clientX / window.innerWidth) * 2 - 1;
                 mouse.current.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+                isUserInteracting.current = true; // Mark as user interacting
             }
         };
 
@@ -40,13 +43,19 @@ export default function Stars(props: GroupProps) {
 
     useFrame((state, delta) => {
         if (ref.current) {
-            // Apply random movement
-            ref.current.rotation.x += randomMovement.current.y * delta * 5;
-            ref.current.rotation.y -= randomMovement.current.x * delta * 5;
-
-            // Map the mouse position to the rotation with user control
-            ref.current.rotation.x += (mouse.current.y * Math.PI * 0.08) * delta;
-            ref.current.rotation.y += (mouse.current.x * Math.PI * 0.08) * delta;
+            // Apply user interaction rotation with higher priority
+            if (isUserInteracting.current) {
+                ref.current.rotation.x = THREE.MathUtils.lerp(ref.current.rotation.x, mouse.current.y * Math.PI * 0.2, delta * 2);
+                ref.current.rotation.y = THREE.MathUtils.lerp(ref.current.rotation.y, mouse.current.x * Math.PI * 0.2, delta * 2);
+                // Gradually reset isUserInteracting to false if no input
+                if (Math.abs(mouse.current.x) < 0.01 && Math.abs(mouse.current.y) < 0.01) {
+                    isUserInteracting.current = false;
+                }
+            } else {
+                // Apply random movement when no user interaction
+                ref.current.rotation.x += randomMovement.current.y * delta * 15;
+                ref.current.rotation.y -= randomMovement.current.x * delta * 15;
+            }
         }
     });
 
