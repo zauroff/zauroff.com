@@ -39,12 +39,11 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      className={`flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20 transition-opacity duration-300 ${
-        showNavbar ? "opacity-100" : "opacity-0"
-      }`}
+      initial={{ opacity: 1 }}
+      animate={{ opacity: showNavbar ? 1 : 0 }}
+      transition={{ duration: 0.5 }}
+      className={"flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20 transition-opacity duration-300"
+      }
     >
       <a href="/">
         <Image

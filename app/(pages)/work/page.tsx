@@ -43,15 +43,6 @@ export default function Work() {
                         </a>
 
 
-                        {/* gridiron */}
-                        <a
-                        className="flex justify-between md:text-4xl text-2xl w-[75vw] transition-colors duration-500 hover:bg-eggshell group" // Add "group" here
-                        href="work/gridiron"
-                        >
-                            <p className="transition-colors duration-500 group-hover:text-blueberry">Gridiron</p>
-                        
-                            <p className="italic transition-colors duration-500 group-hover:text-blueberry">software</p>
-                        </a>
 
                     </div>
 
@@ -84,21 +75,13 @@ export default function Work() {
 
                         <a
                         className="flex justify-between md:text-4xl text-2xl w-[75vw] transition-colors duration-500 hover:bg-eggshell group" // Add "group" here
-                        href="work/kappa-sigma"
+                        href="work/kappasigma"
                         >
                             <p className="transition-colors duration-500 group-hover:text-blueberry">Kappa Sigma Fraternity</p>
                         
                             <p className="italic transition-colors duration-500 group-hover:text-blueberry">design</p>
                         </a>
 
-                        <a
-                        className="flex justify-between md:text-4xl text-2xl w-[75vw] transition-colors duration-500 hover:bg-eggshell group" // Add "group" here
-                        href="work/personal"
-                        >
-                            <p className="transition-colors duration-500 group-hover:text-blueberry">Personal Passion Projects</p>
-                        
-                            <p className="italic transition-colors duration-500 group-hover:text-blueberry">design</p>
-                        </a>
 
 
                     </div>

@@ -16,7 +16,7 @@ export default function LexingtonLeaguePage(){
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="bg-[#0661b4]  rounded-b-xl h-screen w-screen flex items-center justify-center shadow-lg shadow-black"
+          className="bg-[#0661b4]  h-screen w-screen flex items-center justify-center shadow-lg shadow-zinc-900"
       >
           <img src="/work_assets/lexington_league/Lexington League Logo.png" alt="Lexington League Logo" className='md:w-[35vw] w-[50vw]' />
       </motion.div>
@@ -37,7 +37,7 @@ export default function LexingtonLeaguePage(){
               <p className='md:text-2xl text-xl'>Adobe Photoshop, Adobe Illustrator</p>
             </div>
 
-            <div className='flex flex-col justify-center items center mt-20'>
+            <div className='flex flex-col justify-center items-center mt-20'>
               <img src='/work_assets/lexington_league/Lexington-League---Color.png' className='w-[100vw]'></img>
               <img src='/work_assets/lexington_league/Lexington-League---Typeface.png' className='w-[100vw]'></img>
               <img src='/work_assets/lexington_league/Lexington-League---Logos.png' className='w-[100vw]'></img>

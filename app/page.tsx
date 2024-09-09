@@ -35,6 +35,10 @@ export default function Home() {
   }
 
   return (
-      <Hero />
+      <>
+        <Navbar/>
+        <Hero />
+      </>
+
   );
 }

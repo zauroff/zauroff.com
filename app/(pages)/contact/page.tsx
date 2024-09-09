@@ -12,13 +12,14 @@ export default function Contact() {
 
 
   return (
-
+    
     <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
         className="bg-blueberry h-[100vh] w-screen flex justify-center items-center"
     >
+
 
         <div className="">
             <h2 className="md:text-7xl text-4xl">feel free to say hi</h2>
