@@ -39,14 +39,7 @@ export default function Hero(){
       </motion.div>
       
       
-      <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="fixed bottom-5"
-        >
-            <ClockComponent/>
-        </motion.div>
+
 
     </>
   );

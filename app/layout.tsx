@@ -22,7 +22,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/csn8rgm.css"/>
       </head>
       <body>
-        {children}
+        <main className="flex flex-col items-center justify-start p-0 relative">
+          <Navbar/>
+          {children}
+        </main>
       </body>
     </html>
   );

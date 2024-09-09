@@ -28,16 +28,17 @@ export default function Home() {
 
   if (isLoading) {
     return (
-      <main className="flex flex-col items-center justify-center p-0 h-screen">
-        <Loading />
-      </main>
+
+      <Loading />
+
     );
   }
 
   return (
-    <main className="flex flex-col items-center justify-start p-0 relative">
-      <Navbar/>
-      <Hero />
-    </main>
+      <>
+        <Navbar/>
+        <Hero />
+      </>
+
   );
 }

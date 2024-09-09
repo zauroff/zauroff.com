@@ -21,7 +21,7 @@ export default function Loading() {
     }, []);
 
     return (
-    <div className="flex flex-col items-center justify-center h-[100vh] w-full bg-black pt-0 ">
+    <div className="flex flex-col items-center justify-center h-[100vh] w-full bg-black pt-0 z-20 ">
         <h3 className="text-eggshell text-4xl">{percentage}%</h3>
     </div>
     );
