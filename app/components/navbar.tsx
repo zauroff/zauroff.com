@@ -16,15 +16,19 @@ export default function Navbar() {
       if (scrollY === 0) {
         // If the user is at the top of the page, always show the navbar
         setShowNavbar(true);
+
       } else if (scrollY < pageHeight * 0.1) {
         // If the user is within the top 10% of the page, show the navbar
         setShowNavbar(true);
-      } else if (scrollY > lastScrollY) {
+
+      } else if (scrollY  > lastScrollY) {
         // If scrolling down, hide the navbar
         setShowNavbar(false);
+        
       } else {
         // If scrolling up, show the navbar
         setShowNavbar(true);
+
       }
 
       setLastScrollY(scrollY);
@@ -39,10 +43,10 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      initial={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
       animate={{ opacity: showNavbar ? 1 : 0 }}
-      transition={{ duration: 0.5 }}
-      className={"flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20 transition-opacity duration-300"
+      transition={{ duration: .5 }}
+      className={"flex fixed justify-between items-center left-0 w-full h-16 px-8 md:px-16 md:pt-16 pt-20 z-20"
       }
     >
       <a href="/">
