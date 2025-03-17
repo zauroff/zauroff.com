@@ -19,7 +19,7 @@ export default function Projects() {
             <ProjectItemCard 
                 title="North Street Creative"
                 subtitle="Software Engineer Intern"
-                infoTitle="June 2024 - July 2024, Oct 2024 - Feb 2025"
+                infoTitle="June 2024 - Feb 2025"
                 infoSubtitle="Typescript, Next.JS, GraphQL, SASS"
                 dropdownText={`- Reengineered the company website using Next.js and Typescript, improving performance by 20%
 
