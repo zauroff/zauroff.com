@@ -23,7 +23,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/csn8rgm.css"/>
       </head>
       <body>
-        <main className="flex flex-col items-center justify-start p-0 relative">
+        <main className="bg-blueberry px-4 md:px-16">
           <Navbar/>
           {children}
           <Analytics />
