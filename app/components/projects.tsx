@@ -17,6 +17,12 @@ export default function Projects() {
 
             <h2 className="pt-24 md:text-5xl text-3xl font-black">work</h2>
             <ProjectItemCard 
+                title="Digitalocean"
+                subtitle="Software Engineer Intern"
+                infoTitle="June 2025 - Aug 2025"
+                infoSubtitle="Managed Databases Team"
+            />
+            <ProjectItemCard 
                 title="North Street Creative"
                 subtitle="Software Engineer Intern"
                 infoTitle="June 2024 - Feb 2025"
