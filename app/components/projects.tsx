@@ -20,7 +20,7 @@ export default function Projects() {
                 title="Digitalocean"
                 subtitle="Software Engineer Intern"
                 infoTitle="June 2025 - Aug 2025"
-                infoSubtitle="Managed Databases Team"
+                infoSubtitle="DBaas Team"
             />
             <ProjectItemCard 
                 title="North Street Creative"
