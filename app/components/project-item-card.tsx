@@ -7,6 +7,7 @@ export interface ProjectItemCardProps {
   subtitle: string;
   infoTitle: string;
   infoSubtitle: string;
+  SubtitleLink?: string;
   dropdownText?: string;
 }
 
@@ -15,6 +16,7 @@ export default function ProjectItemCard({
   subtitle,
   infoTitle,
   infoSubtitle,
+  SubtitleLink,
   dropdownText = "",
 }: ProjectItemCardProps) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -29,7 +31,18 @@ export default function ProjectItemCard({
         </div>
         {/* Role info */}
         <div className="text-right space-y-2">
+          {SubtitleLink ? (
+        <a 
+          href={SubtitleLink} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="work-card-text hover:text-indigo-600 transition-colors"
+        >
           <h3 className="work-card-text">{infoTitle}</h3>
+        </a>
+          ) : (
+        <h3 className="work-card-text">{infoTitle}</h3>
+          )}
           <h4 className="work-card-text italic">{infoSubtitle}</h4>
         </div>
       </div>

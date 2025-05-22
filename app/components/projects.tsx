@@ -57,10 +57,19 @@ export default function Projects() {
             <h2 className="mt-12 pt-6 md:text-5xl text-3xl font-black">projects</h2>
 
             <ProjectItemCard
+                title="Scheduler Builder RMP"
+                subtitle="Chrome Extension that shows RMP ratings on CUNY's Scheduler Builder"
+                infoTitle="Chrome Store"
+                infoSubtitle="Javascript"
+                SubtitleLink="https://chromewebstore.google.com/detail/schedule-builder-rmp/mjkpehpjpihlakneahlgloncecoboimk?hl=en-US"
+            />
+
+            <ProjectItemCard
                 title="what's for lunch"
                 subtitle="ai powered lunch recommendations"
                 infoTitle="whatsforlunch.nyc"
                 infoSubtitle="Next.JS, Supabase, Python, Docker, Figma"
+                SubtitleLink="https://whatsforlunch.nyc"
             />
 
             <ProjectItemCard
@@ -68,6 +77,7 @@ export default function Projects() {
                 subtitle="Global Algorithmic Trading Competition"
                 infoTitle="prosperity.imc.com"
                 infoSubtitle="Python, Numpy"
+                SubtitleLink="https://prosperity.imc.com"
             />
 
             <ProjectItemCard
@@ -75,6 +85,7 @@ export default function Projects() {
                 subtitle="this website"
                 infoTitle="zauroff.com"
                 infoSubtitle="Next.JS, Figma"
+                SubtitleLink="https://zauroff.com"
             />
 
             <ProjectItemCard
