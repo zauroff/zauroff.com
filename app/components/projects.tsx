@@ -1,103 +1,83 @@
-import { motion } from "framer-motion"
-import ProjectItemCard from "./project-item-card"
-
-
+import { motion } from "framer-motion";
+import ProjectItemCard from "./project-item-card";
+import ChromaticText from "./chromatic-text";
 export default function Projects() {
+  return (
+    <motion.div
+      id="projects"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col md:py-20 py-8 overflow-hidden min-h-screen"
+    >
+    <ChromaticText intensity={2}>
+      <h2 className="pt-24 md:text-5xl text-3xl font-black">work</h2>
+      <ProjectItemCard
+        title="Digitalocean"
+        subtitle="Software Engineer Intern"
+        infoTitle="June 2025 - Aug 2025"
+        infoSubtitle="DBaas Team"
+        dropdownText="brought advanced database settings to the ui, allowing users to have more granular control over their databases"
+      />
+      <ProjectItemCard
+        title="North Street Creative"
+        subtitle="Software Engineer Intern"
+        infoTitle="June 2024 - Feb 2025"
+        infoSubtitle="Typescript, Next.JS, GraphQL, SASS"
+        dropdownText={`re-engineered company's website using next.js, integrating wordpress as a headless cms`}
+      />
 
-    return (
-        <motion.div 
-        id="projects"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        exit={{opacity:0, y: -10}}
-        viewport={{ once: false, amount: 0.2 }}
-        transition={{ duration: .5 }}
-        className="flex flex-col md:py-20 py-8 overflow-hidden min-h-screen"
-        >
+      <ProjectItemCard
+        title="RF CUNY - STEMKasa"
+        subtitle="Software Engineer Intern"
+        infoTitle="July 2024 - August 2024"
+        infoSubtitle="Python, Flask, MongoDB, Postman, OpenAI"
+        dropdownText={`created an mvp for edtech startup`}
+      />
 
-            <h2 className="pt-24 md:text-5xl text-3xl font-black">work</h2>
-            <ProjectItemCard 
-                title="Digitalocean"
-                subtitle="Software Engineer Intern"
-                infoTitle="June 2025 - Aug 2025"
-                infoSubtitle="DBaas Team"
-            />
-            <ProjectItemCard 
-                title="North Street Creative"
-                subtitle="Software Engineer Intern"
-                infoTitle="June 2024 - Feb 2025"
-                infoSubtitle="Typescript, Next.JS, GraphQL, SASS"
-                dropdownText={`- Reengineered the company website using Next.js and Typescript, improving performance by 20%
+      <h2 className="mt-12 pt-6 md:text-5xl text-3xl font-black">projects</h2>
 
-                    - Integrated a headless CMS with GraphQL and Apollo, enabling dynamic content fetching and decoupling site hosting from the CMS for faster load times
+      <ProjectItemCard
+        title="Scheduler Builder RMP"
+        subtitle="Chrome Extension that shows RMP ratings on CUNY's Scheduler Builder"
+        infoTitle="Chrome Store"
+        infoSubtitle="Javascript"
+        SubtitleLink="https://chromewebstore.google.com/detail/schedule-builder-rmp/mjkpehpjpihlakneahlgloncecoboimk?hl=en-US"
+      />
 
-                    - Created a new headless CMS website product, enabling the company to offer clients a flexible and scalable solution for content management and website development
+      <ProjectItemCard
+        title="what's for lunch"
+        subtitle="ai powered lunch recommendations"
+        infoTitle="whatsforlunch.nyc"
+        infoSubtitle="Next.JS, Supabase, Python, Docker, Figma"
+        SubtitleLink="https://whatsforlunch.nyc"
+      />
 
-                    - Translated Figma designs into fully responsive, interactive web experiences, collaborating closely with designers to ensure pixel-perfect implementation for client projects`}
-            />
+      <ProjectItemCard
+        title="IMC Prosperity"
+        subtitle="Global Algorithmic Trading Competition"
+        infoTitle="prosperity.imc.com"
+        infoSubtitle="Python, Numpy"
+        SubtitleLink="https://prosperity.imc.com"
+      />
 
-            <ProjectItemCard 
-                title="RF CUNY - STEMKasa"
-                subtitle="Software Engineer Intern"
-                infoTitle="July 2024 - August 2024"
-                infoSubtitle="Python, Flask, MongoDB, Postman, OpenAI"
-                dropdownText={`-Led a team of three interns to develop a Python microservice using Flask for OpenAI-powered chatbot interactions,
-                        integrating with a MongoDB database managed by another microservice
-                        
-                        - Collaborated with intern teams working on separate LLM microservices (Gemini, Mistral, Claude), ensuring seamless
-                        interoperability for a unified multi-model AI experience
-                        
-                        - Developed a React-based text-to-speech and speech-to-text component, enabling voice interactions with the chatbot
-                        through our microservice
-                        
-                        - Integrated the microservice and speech components into the frontend, delivering an MVP that allows students to create
-                        custom quizzes, flashcards, and tutor chatbots based on teacher-uploaded course materials`}
-                />
+      <ProjectItemCard
+        title="portfolio"
+        subtitle="this website"
+        infoTitle="zauroff.com"
+        infoSubtitle="Next.JS, Figma, ThreeJS"
+        SubtitleLink="https://zauroff.com"
+      />
 
-            <h2 className="mt-12 pt-6 md:text-5xl text-3xl font-black">projects</h2>
-
-            <ProjectItemCard
-                title="Scheduler Builder RMP"
-                subtitle="Chrome Extension that shows RMP ratings on CUNY's Scheduler Builder"
-                infoTitle="Chrome Store"
-                infoSubtitle="Javascript"
-                SubtitleLink="https://chromewebstore.google.com/detail/schedule-builder-rmp/mjkpehpjpihlakneahlgloncecoboimk?hl=en-US"
-            />
-
-            <ProjectItemCard
-                title="what's for lunch"
-                subtitle="ai powered lunch recommendations"
-                infoTitle="whatsforlunch.nyc"
-                infoSubtitle="Next.JS, Supabase, Python, Docker, Figma"
-                SubtitleLink="https://whatsforlunch.nyc"
-            />
-
-            <ProjectItemCard
-                title="IMC Prosperity"
-                subtitle="Global Algorithmic Trading Competition"
-                infoTitle="prosperity.imc.com"
-                infoSubtitle="Python, Numpy"
-                SubtitleLink="https://prosperity.imc.com"
-            />
-
-            <ProjectItemCard
-                title="portfolio"
-                subtitle="this website"
-                infoTitle="zauroff.com"
-                infoSubtitle="Next.JS, Figma"
-                SubtitleLink="https://zauroff.com"
-            />
-
-            <ProjectItemCard
-                title="study room reservation bot"
-                subtitle="reserves baruch college study rooms"
-                infoTitle="gatekeeping for now"
-                infoSubtitle="Python, Selenium"
-            />
-
-           
-            
-
-        </motion.div>
-    )
-};
+      <ProjectItemCard
+        title="study room reservation bot"
+        subtitle="reserves baruch college study rooms"
+        infoTitle="gatekeeping for now"
+        infoSubtitle="Python, Selenium"
+      />
+      </ChromaticText>
+    </motion.div>
+  );
+}

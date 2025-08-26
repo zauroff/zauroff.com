@@ -23,7 +23,7 @@ export default function Navbar() {
       animate={{ opacity: showNavbar ? 1 : 0 }}
       transition={{ duration: 0.5 }}
       className={
-        "fixed top-8 left-1/2 transform -translate-x-1/2 flex md:w-[50%] w-[98%] max-w-[1024px] md:h-16 h-10 md:px-8 px-4 z-20 bg-eggshell rounded-full border-noir border-2"
+        "fixed top-8 left-1/2 transform -translate-x-1/2 flex md:w-[50%] w-[98%] max-w-[1024px] md:h-16 h-10 md:px-8 px-4 z-20 bg-eggshell border-noir border-2"
       }
     >
       <div className="h-full flex w-full items-center justify-between">

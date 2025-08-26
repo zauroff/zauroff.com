@@ -24,6 +24,7 @@ const config = {
         peach:"#faeddf",
         blueberry:"#1b38e2",
         eggshell:"#f2f2f2",
+        strawberry:"#bf0b0b",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
