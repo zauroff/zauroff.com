@@ -27,6 +27,13 @@ function RefractiveText({ children, fontSize = 1, position = [0, 0, 0], color = 
     })
   }, [size])
 
+  // Animate the material's time uniform
+  useFrame((state) => {
+    if (material && material.updateTime) {
+      material.updateTime(state.clock.elapsedTime)
+    }
+  })
+
   return (
     <Text
       ref={textRef}

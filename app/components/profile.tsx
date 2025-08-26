@@ -11,7 +11,7 @@ export default function Profile() {
       transition={{ duration: 0.5 }}
       className="flex flex-col md:py-20 py-8 overflow-hidden min-h-screen"
     >
-      <ChromaticText intensity={2}>
+
         <h2 className="pt-24 md:text-5xl text-3xl font-black">about me</h2>
         <div className="md:mt-24 mt-8 flex md:flex-row flex-col gap-16">
           <div className="flex-1 md:mt-0 mt-8 max-w-[1024px]">
@@ -40,7 +40,7 @@ export default function Profile() {
             </div>
           </div>
         </div>
-      </ChromaticText>
+
     </motion.div>
   );
 }

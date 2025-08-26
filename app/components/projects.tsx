@@ -12,7 +12,6 @@ export default function Projects() {
       transition={{ duration: 0.5 }}
       className="flex flex-col md:py-20 py-8 overflow-hidden min-h-screen"
     >
-    <ChromaticText intensity={2}>
       <h2 className="pt-24 md:text-5xl text-3xl font-black">work</h2>
       <ProjectItemCard
         title="Digitalocean"
@@ -77,7 +76,6 @@ export default function Projects() {
         infoTitle="gatekeeping for now"
         infoSubtitle="Python, Selenium"
       />
-      </ChromaticText>
     </motion.div>
   );
 }

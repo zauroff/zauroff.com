@@ -11,7 +11,6 @@ export default function Contact() {
       transition={{ duration: 0.5 }}
       className="h-[100vh] flex justify-center items-center"
     >
-      <ChromaticText intensity={3}>
           <div className="">
             <h2 className="md:text-7xl text-4xl">feel free to say hi</h2>
             <div className="flex justify-between md:mt-8 mt-4">
@@ -51,7 +50,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-      </ChromaticText>
     </motion.div>
   );
 }

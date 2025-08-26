@@ -24,13 +24,11 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/csn8rgm.css"/>
       </head>
       <body>
-          <CRTOverlay>
-            <main className="bg-strawberry px-4 md:px-16">
+            <main className="  bg-blueberry px-4 md:px-16">
               <Navbar/>
               {children}
               <Analytics />
             </main>
-          </CRTOverlay>
       </body>
     </html>
   );

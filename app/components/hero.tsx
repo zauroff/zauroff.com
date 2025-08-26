@@ -18,13 +18,12 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="flex flex-col text-left"
         >
-            <ChromaticText intensity={3}>
               <h1>Howdy, I&apos;m</h1>
               <h1>Dan Zauroff</h1>
               <h2 className="text-2xl md:text-4xl font-normal">
                 software engineer
               </h2>
-            </ChromaticText>
+
         </motion.div>
       </motion.div>
     </>
