@@ -11,7 +11,6 @@ export default function Home() {
   return (
       <>
         <Hero />
-        <Profile/>
         <Projects/>
         <Contact/>
       </>

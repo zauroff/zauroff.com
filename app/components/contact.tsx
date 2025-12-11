@@ -12,14 +12,14 @@ export default function Contact() {
       className="h-[100vh] flex justify-center items-center"
     >
           <div className="">
-            <h2 className="md:text-7xl text-4xl">feel free to say hi</h2>
+            <h2 className="md:text-7xl text-4xl">Feel Free to Say Hi</h2>
             <div className="flex justify-between md:mt-8 mt-4">
               <div className="text-left relative">
-                <a className="md:text-4xl text-xl">email:</a>
+                <a className="md:text-4xl text-xl">Email:</a>
                 <br />
-                <a className="md:text-4xl text-xl">github:</a>
+                <a className="md:text-4xl text-xl">Github:</a>
                 <br />
-                <a className="md:text-4xl text-xl">linkedin:</a>
+                <a className="md:text-4xl text-xl">LinkedIn:</a>
                 <br />
               </div>
               <div className="text-right relative">

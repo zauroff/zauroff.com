@@ -12,9 +12,15 @@ export default function Projects() {
       transition={{ duration: 0.5 }}
       className="flex flex-col md:py-20 py-8 overflow-hidden min-h-screen"
     >
-      <h2 className="pt-24 md:text-5xl text-3xl font-black">work</h2>
+      <h2 className="pt-24 md:text-5xl text-3xl font-black">Experience</h2>
       <ProjectItemCard
-        title="Digitalocean"
+        title="Bloomberg"
+        subtitle="Software Engineer"
+        infoTitle="Present"
+
+      />
+      <ProjectItemCard
+        title="DigitalOcean"
         subtitle="Software Engineer Intern"
         infoTitle="June 2025 - Aug 2025"
         infoSubtitle="DBaas Team"
@@ -23,7 +29,7 @@ export default function Projects() {
       <ProjectItemCard
         title="North Street Creative"
         subtitle="Software Engineer Intern"
-        infoTitle="June 2024 - Feb 2025"
+        infoTitle="June 2024 - July 2024"
         infoSubtitle="Typescript, Next.JS, GraphQL, SASS"
         dropdownText={`re-engineered company's website using next.js, integrating wordpress as a headless cms`}
       />
@@ -36,7 +42,7 @@ export default function Projects() {
         dropdownText={`created an mvp for edtech startup`}
       />
 
-      <h2 className="mt-12 pt-6 md:text-5xl text-3xl font-black">projects</h2>
+      <h2 className="mt-12 pt-6 md:text-5xl text-3xl font-black">Projects</h2>
 
       <ProjectItemCard
         title="Scheduler Builder RMP"
@@ -48,7 +54,7 @@ export default function Projects() {
 
       <ProjectItemCard
         title="what's for lunch"
-        subtitle="ai powered lunch recommendations"
+        subtitle="AI Powered Lunch Recommendations"
         infoTitle="whatsforlunch.nyc"
         infoSubtitle="Next.JS, Supabase, Python, Docker, Figma"
         SubtitleLink="https://whatsforlunch.nyc"
@@ -63,17 +69,17 @@ export default function Projects() {
       />
 
       <ProjectItemCard
-        title="portfolio"
-        subtitle="this website"
+        title="Portfolio"
+        subtitle="This Website"
         infoTitle="zauroff.com"
         infoSubtitle="Next.JS, Figma, ThreeJS"
         SubtitleLink="https://zauroff.com"
       />
 
       <ProjectItemCard
-        title="study room reservation bot"
-        subtitle="reserves baruch college study rooms"
-        infoTitle="gatekeeping for now"
+        title="Study Room Reservation Bot"
+        subtitle="Reserves Baruch College Study Rooms"
+        infoTitle="Gatekeeping ;)"
         infoSubtitle="Python, Selenium"
       />
     </motion.div>

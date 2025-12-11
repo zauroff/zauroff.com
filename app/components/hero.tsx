@@ -21,7 +21,7 @@ export default function Hero() {
               <h1>Howdy, I&apos;m</h1>
               <h1>Dan Zauroff</h1>
               <h2 className="text-2xl md:text-4xl font-normal">
-                software engineer
+                Software Engineer              
               </h2>
 
         </motion.div>
