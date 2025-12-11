@@ -17,6 +17,7 @@ export default function Projects() {
         title="Bloomberg"
         subtitle="Software Engineer"
         infoTitle="Present"
+        infoSubtitle=""
 
       />
       <ProjectItemCard
